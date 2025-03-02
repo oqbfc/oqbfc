@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اعضای تیم عقاب قشقایی</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- هدر سایت -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="لوگو تیم عقاب قشقایی">
+        </div>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-btn">خانه</a></li>
+                <li><a href="news.html">اخبار</a></li>
+                <li><a href="team.html" class="nav-btn">اعضای تیم</a></li>
+                <li><a href="league.html" class="nav-btn">جدول مسابقات</a></li>
+                <li><a href="videos.html" class="nav-btn">ویدیوها</a></li>
+                <li><a href="gallery.html" class="nav-btn">گالری</a></li>
+                <li><a href="contact.html" class="nav-btn">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- بخش اعضای تیم (به زودی) -->
+    <section class="coming-soon">
+        <div class="coming-soon-content">
+            <h1 class="coming-soon-title">اخبار</h1>
+            <p class="coming-soon-text">به زودی راه‌اندازی می‌شود...</p>
+            <div class="coming-soon-animation">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر سایت -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- بخش لینک‌های سریع -->
+            <div class="footer-section">
+                <h4>لینک‌های سریع</h4>
+                <ul>
+                    <li><a href="news.html">اخبار</a></li>
+                    <li><a href="team.html">اعضای تیم</a></li>
+                    <li><a href="league.html">جدول مسابقات</a></li>
+                    <li><a href="videos.html">ویدئوها</a></li>
+                </ul>
+            </div>
+    
+            <!-- بخش شبکه‌های اجتماعی -->
+            <div class="footer-section">
+                <h4>ما را دنبال کنید</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/fc.oqb?igsh=MTJlNGU3MHdkcnl1bQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.aparat.com/hamedaghaei22"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    
+            <!-- بخش تماس با ما -->
+            <div class="footer-section">
+                <h4>تماس با ما</h4>
+                <ul>
+                    <li><a href="https://rubika.ir/poshtibanoqb">پشتیبانی</a></li>
+                    <li><a href="https://rubika.ir/poshtibanoqb">همکاری با ما</a></li>
+                    <li><a href="https://rubika.ir/poshtibanoqb">تبلیغات</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- بخش حقوق قانونی -->
+        <div class="footer-bottom">
+            <p>© 2025 عقاب قشقایی. تمام حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <!-- اسکریپت منوی همبرگری -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        if (menuIcon && navLinks) {
+            menuIcon.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        document.addEventListener('click', (event) => {
+            if (navLinks.classList.contains('active') && !menuIcon.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
